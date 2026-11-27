@@ -22,13 +22,13 @@ int bonus(int visits, int baseBonus, bool weekend) {
 }
 
 int main() {
-    int visits, baseBonus, weekendFlag;
+    int visits, baseBonus, weekend;
 
     cout << "Enter visits, base bonus, weekend (0/1): ";
-    cin >> visits >> baseBonus >> weekendFlag;
+    cin >> visits >> baseBonus >> weekend;
 
     cout << "Bonus (2 args): " << bonus(visits, baseBonus) << endl;
-    cout << "Bonus (3 args): " << bonus(visits, baseBonus, weekendFlag == 1) << endl;
+    cout << "Bonus (3 args): " << bonus(visits, baseBonus, weekend == 1) << endl;
 
     return 0;
 }
